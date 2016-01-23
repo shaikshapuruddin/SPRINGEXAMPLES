@@ -1,0 +1,5 @@
+<!--applicationContext-dao-jdbc.xml-->
+ <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:context="http://www.springframework.org/schema/context" xmlns:jdbc="http://www.springframework.org/schema/jdbc"  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd" xmlns:p="http://www.springframework.org/schema/p" xmlns:c="http://www.springframework.org/schema/c">
+   <bean id="userServices" class="com.shaik.spring.services.UserServices" p:userDao-ref="udao"/>   
+	   </beans>
